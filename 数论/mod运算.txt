@@ -1,0 +1,5 @@
+(a+b)%m=(a%m+b%m)%m
+(a*b)%m=(a%m)*(b%m)%m
+(a+b)%m=(b+a)%m
+(a+b+c)%m=(a+(b+c))%m
+(a+b)*c%m=(a*c+b*c)%m

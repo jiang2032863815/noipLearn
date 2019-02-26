@@ -4,15 +4,16 @@ int main()
 {
     int n;
     cin>>n;
-    int i=2;
-    while(n>1){
-        if(n%i==0){
-            n/=i;
-            cout<<i<<" ";
-        }else{
-            i++;
+    for(int i=2;i*i<=n;i++){
+        while(n>i){
+            if(n%i==0){
+                cout<<i<<endl;
+                n/=i;
+            }else{
+                break;
+            }
         }
     }
-    cout<<endl;
+    cout<<n<<endl;
     return 0;
 }
